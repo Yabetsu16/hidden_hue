@@ -26,6 +26,7 @@
 		<style>
 			body {
 				font-family: "Montserrat";
+				background-color: #f8fcff;
 			}
 		</style>
 
@@ -37,10 +38,10 @@
 		></script>
 	</head>
 	<body>
-		<div class="container mt-3">
+		<div id="navbar" class="container-fluid mt-3">
 			<nav style="background-color: #00fffe" class="navbar navbar-expand-lg">
 				<div class="container-fluid">
-					<a style="font-weight: 600" class="navbar-brand" href="#"
+					<a style="font-weight: 600" class="navbar-brand" href="#navbar"
 						>Hidden Hue</a
 					>
 					<button
@@ -60,7 +61,7 @@
 							style="font-weight: 500"
 						>
 							<li class="nav-item">
-								<a class="nav-link" href="index.html">My Paintings</a>
+								<a class="nav-link" href="#my_painting">My Paintings</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#">About</a>
@@ -71,274 +72,191 @@
 			</nav>
 		</div>
 
-		<div class="container mt-5">
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-					<div class="card" style="background-color: #88ffcc">
-						<div class="card-body">
-							<div class="card">
-								<div
-									id="carouselGuitar"
-									class="carousel slide"
-									data-bs-ride="carousel"
-								>
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img
-												src="./img/Guitar_above_the_thankful_lake_1.jpg"
-												class="d-block w-100"
-												alt="Guitar above the thankful lake"
-											/>
+		<main id="my_painting">
+			<div class="container-fluid mt-5">
+				<div class="row row-cols-1 row-cols-md-4 g-4">
+					<div class="col">
+						<div class="card" style="background-color: #88ffcc">
+							<div class="card-body">
+								<div class="card">
+									<div
+										id="carouselGuitar"
+										class="carousel slide"
+										data-bs-ride="carousel"
+									>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img
+													src="./img/Guitar_above_the_thankful_lake_1.jpg"
+													class="d-block w-100"
+													alt="Guitar above the thankful lake"
+												/>
+											</div>
+											<div class="carousel-item">
+												<img
+													src="./img/Guitar_above_the_thankful_lake_2.jpg"
+													class="d-block w-100"
+													alt="Guitar above the thankful lake"
+												/>
+											</div>
+											<div class="carousel-item">
+												<img
+													src="./img/Guitar_above_the_thankful_lake_3.jpg"
+													class="d-block w-100"
+													alt="Guitar above the thankful lake"
+												/>
+											</div>
 										</div>
-										<div class="carousel-item">
-											<img
-												src="./img/Guitar_above_the_thankful_lake_2.jpg"
-												class="d-block w-100"
-												alt="Guitar above the thankful lake"
-											/>
-										</div>
-										<div class="carousel-item">
-											<img
-												src="./img/Guitar_above_the_thankful_lake_3.jpg"
-												class="d-block w-100"
-												alt="Guitar above the thankful lake"
-											/>
-										</div>
+										<button
+											class="carousel-control-prev"
+											type="button"
+											data-bs-target="#carouselGuitar"
+											data-bs-slide="prev"
+										>
+											<span
+												class="carousel-control-prev-icon"
+												aria-hidden="true"
+											></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button
+											class="carousel-control-next"
+											type="button"
+											data-bs-target="#carouselGuitar"
+											data-bs-slide="next"
+										>
+											<span
+												class="carousel-control-next-icon"
+												aria-hidden="true"
+											></span>
+											<span class="visually-hidden">Next</span>
+										</button>
 									</div>
-									<button
-										class="carousel-control-prev"
-										type="button"
-										data-bs-target="#carouselGuitar"
-										data-bs-slide="prev"
-									>
-										<span
-											class="carousel-control-prev-icon"
-											aria-hidden="true"
-										></span>
-										<span class="visually-hidden">Previous</span>
-									</button>
-									<button
-										class="carousel-control-next"
-										type="button"
-										data-bs-target="#carouselGuitar"
-										data-bs-slide="next"
-									>
-										<span
-											class="carousel-control-next-icon"
-											aria-hidden="true"
-										></span>
-										<span class="visually-hidden">Next</span>
-									</button>
-								</div>
 
-								<div class="card-body">
-									<h5 class="card-title text-center">
-										Guitar above the Thankful Lake
-									</h5>
-									<p class="card-text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua.
-									</p>
-								</div>
-								<div class="card-footer">
-									<div class="row text-center">
-										<div class="col-6">
-											<a
-												href="https://www.facebook.com/juriimontes/posts/pfbid0x2tM6Ga4zBq9tyfUFzAPfEoNyogFBm9udcFzk2cZB9r2qj63Ub1fhSNfgDo1RY9Hl"
-												target="_blank"
-											>
-												<button type="button" class="btn btn-primary">
-													<i class="fa-brands fa-facebook"></i> Facebook
+									<div class="card-body">
+										<h5 class="card-title text-center">
+											Guitar above the Thankful Lake
+										</h5>
+									</div>
+									<div class="card-footer">
+										<div class="row text-center">
+											<p>Buy this?</p>
+											<div class="col-6">
+												<a
+													href="https://www.facebook.com/juriimontes/posts/pfbid0x2tM6Ga4zBq9tyfUFzAPfEoNyogFBm9udcFzk2cZB9r2qj63Ub1fhSNfgDo1RY9Hl"
+													target="_blank"
+												>
+													<button type="button" class="btn btn-primary">
+														<i class="fa-brands fa-facebook"></i> Facebook
+													</button>
+												</a>
+											</div>
+											<div class="col-6">
+												<button
+													type="button"
+													style="background-color: #833ab4"
+													class="btn btn-secondary"
+												>
+													<i class="fa-brands fa-instagram"></i> Instagram
 												</button>
-											</a>
-										</div>
-										<div class="col-6">
-											<button
-												type="button"
-												style="background-color: #833ab4"
-												class="btn btn-secondary"
-											>
-												<i class="fa-brands fa-instagram"></i> Instagram
-											</button>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="card" style="background-color: #88ffcc">
-						<div class="card-body">
-							<div class="card">
-								<div
-									id="carouselGuitar2"
-									class="carousel slide"
-									data-bs-ride="carousel"
-								>
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img
-												src="./img/Guitar_above_the_thankful_lake_1.jpg"
-												class="d-block w-100"
-												alt="Guitar above the thankful lake"
-											/>
+					<div class="col">
+						<div class="card" style="background-color: #88ffcc">
+							<div class="card-body">
+								<div class="card">
+									<div
+										id="carouselGuitar2"
+										class="carousel slide"
+										data-bs-ride="carousel"
+									>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img
+													src="./img/Sunrise_in_a_calm_sea_1.jpg"
+													class="d-block w-100"
+													alt="Guitar above the thankful lake"
+												/>
+											</div>
+											<div class="carousel-item">
+												<img
+													src="./img/Sunrise_in_a_calm_sea_2.jpg"
+													class="d-block w-100"
+													alt="Guitar above the thankful lake"
+												/>
+											</div>
+											<div class="carousel-item">
+												<img
+													src="./img/Sunrise_in_a_calm_sea_3.jpg"
+													class="d-block w-100"
+													alt="Guitar above the thankful lake"
+												/>
+											</div>
+											<div class="carousel-item">
+												<img
+													src="./img/Sunrise_in_a_calm_sea_4.jpg"
+													class="d-block w-100"
+													alt="Guitar above the thankful lake"
+												/>
+											</div>
 										</div>
-										<div class="carousel-item">
-											<img
-												src="./img/Guitar_above_the_thankful_lake_2.jpg"
-												class="d-block w-100"
-												alt="Guitar above the thankful lake"
-											/>
-										</div>
-										<div class="carousel-item">
-											<img
-												src="./img/Guitar_above_the_thankful_lake_3.jpg"
-												class="d-block w-100"
-												alt="Guitar above the thankful lake"
-											/>
-										</div>
+										<button
+											class="carousel-control-prev"
+											type="button"
+											data-bs-target="#carouselGuitar2"
+											data-bs-slide="prev"
+										>
+											<span
+												class="carousel-control-prev-icon"
+												aria-hidden="true"
+											></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button
+											class="carousel-control-next"
+											type="button"
+											data-bs-target="#carouselGuitar2"
+											data-bs-slide="next"
+										>
+											<span
+												class="carousel-control-next-icon"
+												aria-hidden="true"
+											></span>
+											<span class="visually-hidden">Next</span>
+										</button>
 									</div>
-									<button
-										class="carousel-control-prev"
-										type="button"
-										data-bs-target="#carouselGuitar2"
-										data-bs-slide="prev"
-									>
-										<span
-											class="carousel-control-prev-icon"
-											aria-hidden="true"
-										></span>
-										<span class="visually-hidden">Previous</span>
-									</button>
-									<button
-										class="carousel-control-next"
-										type="button"
-										data-bs-target="#carouselGuitar2"
-										data-bs-slide="next"
-									>
-										<span
-											class="carousel-control-next-icon"
-											aria-hidden="true"
-										></span>
-										<span class="visually-hidden">Next</span>
-									</button>
-								</div>
-								<div class="card-body">
-									<h5 class="card-title text-center">
-										Guitar above the Thankful Lake
-									</h5>
-									<p class="card-text">
-										Ut enim ad minim veniam, quis nostrud exercitation ullamco
-										laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-										irure dolor in reprehenderit in voluptate.
-									</p>
-								</div>
-								<div class="card-footer">
-									<div class="row text-center">
-										<div class="col-6">
-											<button type="button" class="btn btn-primary">
-												<i class="fa-brands fa-facebook"></i> Facebook
-											</button>
-										</div>
-										<div class="col-6">
-											<button
-												type="button"
-												style="background-color: #833ab4"
-												class="btn btn-secondary"
-											>
-												<i class="fa-brands fa-instagram"></i> Instagram
-											</button>
-										</div>
+									<div class="card-body">
+										<h5 class="card-title text-center">
+											Sunrise in a calm sea
+										</h5>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card" style="background-color: #88ffcc">
-						<div class="card-body">
-							<div class="card">
-								<div
-									id="carouselGuitar3"
-									class="carousel slide"
-									data-bs-ride="carousel"
-								>
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img
-												src="./img/Guitar_above_the_thankful_lake_1.jpg"
-												class="d-block w-100"
-												alt="Guitar above the thankful lake"
-											/>
-										</div>
-										<div class="carousel-item">
-											<img
-												src="./img/Guitar_above_the_thankful_lake_2.jpg"
-												class="d-block w-100"
-												alt="Guitar above the thankful lake"
-											/>
-										</div>
-										<div class="carousel-item">
-											<img
-												src="./img/Guitar_above_the_thankful_lake_3.jpg"
-												class="d-block w-100"
-												alt="Guitar above the thankful lake"
-											/>
-										</div>
-									</div>
-									<button
-										class="carousel-control-prev"
-										type="button"
-										data-bs-target="#carouselGuitar3"
-										data-bs-slide="prev"
-									>
-										<span
-											class="carousel-control-prev-icon"
-											aria-hidden="true"
-										></span>
-										<span class="visually-hidden">Previous</span>
-									</button>
-									<button
-										class="carousel-control-next"
-										type="button"
-										data-bs-target="#carouselGuitar3"
-										data-bs-slide="next"
-									>
-										<span
-											class="carousel-control-next-icon"
-											aria-hidden="true"
-										></span>
-										<span class="visually-hidden">Next</span>
-									</button>
-								</div>
-								<div class="card-body">
-									<h5 class="card-title text-center">
-										Guitar above the Thankful Lake
-									</h5>
-									<p class="card-text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua.
-									</p>
-								</div>
-								<div class="card-footer">
-									<div class="row text-center">
-										<div class="col-6">
-											<button type="button" class="btn btn-primary">
-												<i class="fa-brands fa-facebook"></i> Facebook
-											</button>
-										</div>
-										<div class="col-6">
-											<button
-												type="button"
-												style="background-color: #833ab4"
-												class="btn btn-secondary"
-											>
-												<i class="fa-brands fa-instagram"></i> Instagram
-											</button>
+									<div class="card-footer">
+										<div class="row text-center">
+											<p>Buy this?</p>
+											<div class="col-6">
+												<a
+													href="https://www.facebook.com/juriimontes/posts/pfbid0x2tM6Ga4zBq9tyfUFzAPfEoNyogFBm9udcFzk2cZB9r2qj63Ub1fhSNfgDo1RY9Hl"
+													target="_blank"
+												>
+													<button type="button" class="btn btn-primary">
+														<i class="fa-brands fa-facebook"></i> Facebook
+													</button>
+												</a>
+											</div>
+											<div class="col-6">
+												<button
+													type="button"
+													style="background-color: #833ab4"
+													class="btn btn-secondary"
+												>
+													<i class="fa-brands fa-instagram"></i> Instagram
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -347,6 +265,17 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
+		<footer>
+			<div class="container-fluid">
+				<footer
+					class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top"
+				>
+					<div class="d-flex align-items-center">
+						<span class="mb-3 mb-md-0 text-muted">© 2022 Hidden Hue</span>
+					</div>
+				</footer>
+			</div>
+		</footer>
 	</body>
 </html>
